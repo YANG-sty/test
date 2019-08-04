@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+    <servlet-name>FoodTypeServlet</servlet-name>
+    <servlet-class>zzu.sys.servlet.FoodTypeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DinnerTableServlet</servlet-name>
+    <servlet-class>zzu.sys.servlet.DinnerTableServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FoodServlet</servlet-name>
+    <servlet-class>zzu.sys.servlet.FoodServlet</servlet-class>
+  </servlet>
+
+
+
+  <servlet-mapping>
+    <servlet-name>FoodTypeServlet</servlet-name>
+    <url-pattern>/foodType</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DinnerTableServlet</servlet-name>
+    <url-pattern>/table</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FoodServlet</servlet-name>
+    <url-pattern>/food</url-pattern>
+  </servlet-mapping>
+
+</web-app>
